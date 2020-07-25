@@ -14,5 +14,5 @@ facebook pages
 .unittest
 
 *Make sure to have all modules before cloning the code*
-**Or you can also use the requirements.txt file**
+
     
