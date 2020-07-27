@@ -58,15 +58,14 @@ view_reactions_xpath = "/html/body/div/div/div[2]/div/div[1]/div[2]/div/div[3]/a
 driver.find_element_by_xpath(view_reactions_xpath).click()
 
 
-see_more_btn = "/html/body/div/div/div[2]/div/table/tbody/tr/td/div/ul/li[11]/table/tbody/tr/td/div/a/span"
+see_more_btn = "/html/body/div/div/div[2]/div/table/tbody/tr/td/div/ul/li[10]/table/tbody/tr/td/div/a/span"
 driver.find_element_by_xpath(see_more_btn).click()
 
 nolimit = driver.current_url
-
-nolimit.replace("limit=10", "limit=1000")
-
+nolimit_str = str(nolimit)
+nolimit_str_rep = nolimit_str.replace("?limit=10", "?limit=1000")
 
 ptg.click(537, 75)
-ptg.typewrite(nolimit)
+ptg.typewrite(nolimit_str_rep)
 ptg.typewrite(['enter'])
 print(nolimit)
