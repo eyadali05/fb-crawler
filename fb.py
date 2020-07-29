@@ -19,10 +19,11 @@ driver = webdriver.Chrome(PATH)
 driver.get("https://mbasic.facebook.com/atisaviationacademic/")
 #driver.execute_script("window.scrollBy(0,1500)")
 
-email = "fbcrawler888@gmail.com"
-password = "farabischool2"
+email = "hidden (xD)"
+password = "not today (lmao)"
 
-log_in_btn_1 = driver.find_element_by_xpath("/html/body/div/div/div[2]/div/div[1]/div[2]/a[2]").click()
+log_in_btn_1 = driver.find_element_by_xpath(
+    "/html/body/div/div/div[2]/div/div[1]/div[2]/a[2]").click()
 #email_input_btn = driver.find_element_by_xpath("/html/body/div/div/div[2]/div/table/tbody/tr/td/div[3]/div[2]/form/ul/li[1]/input").click()
 
 
@@ -33,7 +34,8 @@ ptg.typewrite(email, interval=0.05)
 ptg.click(588, 303)
 ptg.typewrite(password, interval=0.05)
 
-log_in_btn_2 = driver.find_element_by_xpath("/html/body/div/div/div[2]/div/table/tbody/tr/td/div[3]/div[2]/form/ul/li[3]/input").click()
+log_in_btn_2 = driver.find_element_by_xpath(
+    "/html/body/div/div/div[2]/div/table/tbody/tr/td/div[3]/div[2]/form/ul/li[3]/input").click()
 
 #Point(x=1188, y=59) // URL area
 
